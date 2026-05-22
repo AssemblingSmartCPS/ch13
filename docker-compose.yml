@@ -504,7 +504,7 @@ services:
       - ./conf_ui:/etc/openstack-dashboard
 
   lightning-rod:
-    image: docker.io/mdslab/lrod:compose
+    image: docker.io/mdslab/lrod:compose@sha256:<resolved-image-digest>
     container_name: lightning-rod
     restart: unless-stopped
     privileged: true
